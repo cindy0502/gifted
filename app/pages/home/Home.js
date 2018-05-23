@@ -8,12 +8,16 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import {Calendar} from 'react-native-calendars';
+import Headercomponent from '../../components/Headercomponent.js';
 
 import {styles} from '../home/styles';
+
+const backgroundColor = "#0067a7";
 
 export default class Home extends Component {
 
   static navigationOptions = ({ navigation }) => {
+
     let drawerLabel = 'Home';
 
     return { drawerLabel };
@@ -33,9 +37,11 @@ export default class Home extends Component {
       <View style={styles.container}>
 
         <View style = {styles.header}>
-        <TouchableOpacity>
+
+          <Headercomponent {...this.props}/>
+        {/* <TouchableOpacity>
           <Image source={require('../../images/menu.png')} style={styles.menu}/>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
           <Text style = {styles.headerText}> HOME </Text>
           <TouchableOpacity>
             <Image source={require('../../images/notification.png')} style={styles.notification}/>

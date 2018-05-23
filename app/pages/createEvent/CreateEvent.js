@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {
 AppRegistry,
 StyleSheet,
@@ -12,10 +12,11 @@ Image,
  } from 'react-native';
 
 //import RegisterForm from '../../components/RegisterForm.js';
+import Headercomponent from '../../components/Headercomponent.js'
 
 import {styles} from '../createEvent/styles';
 
-export default class CreateEvent extends React.Component {
+export default class CreateEvent extends Component {
 
   static navigationOptions = ({ navigation }) => {
     let drawerLabel = 'Home';
@@ -30,10 +31,12 @@ export default class CreateEvent extends React.Component {
     return (
       <View style = {styles.headercontainer}>
 
+
         <View style = {styles.header}>
-          <TouchableOpacity>
+          <Headercomponent {...this.props}/>
+          {/* <TouchableOpacity>
           <Image source={require('../../images/menu.png')} style={styles.menu}/>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
           <Text style = {styles.headerText}> CREATE EVENT </Text>
         </View>
         <StatusBar

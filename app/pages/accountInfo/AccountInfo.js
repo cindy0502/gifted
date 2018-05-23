@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {
 AppRegistry,
 StyleSheet,
@@ -12,10 +12,11 @@ Image,
  } from 'react-native';
 
 //import RegisterForm from '../../components/RegisterForm.js';
+import Headercomponent from '../../components/Headercomponent.js'
 
 import {styles} from '../accountInfo/styles';
 
-export default class AccountInfo extends React.Component {
+export default class AccountInfo extends Component {
 
   static navigationOptions = ({ navigation }) => {
     let drawerLabel = 'Home';
@@ -30,10 +31,14 @@ export default class AccountInfo extends React.Component {
     return (
       <View style = {styles.headercontainer}>
 
+
         <View style = {styles.header}>
-        <TouchableOpacity>
+
+          <Headercomponent {...this.props}/>
+
+        {/* <TouchableOpacity>
           <Image source={require('../../images/menu.png')} style={styles.menu}/>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
           <Text style = {styles.headerText}> CHANGE ACCOUNT INFORMATION </Text>
         </View>
         <StatusBar
