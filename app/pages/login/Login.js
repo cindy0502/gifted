@@ -10,12 +10,8 @@ Alert,
 TouchableOpacity,
 Image } from 'react-native';
 
-//import LoginForm from '../../components/LoginForm.js';
-//import Logo from '../../components/Logo.js';
-
-
 import {styles} from '../login/styles';
-
+import Testing from '../home/Home0.js';
 export default class Login extends React.Component {
 
   constructor(props) {
@@ -72,7 +68,12 @@ export default class Login extends React.Component {
 
         </TouchableOpacity>
 
-           <TouchableOpacity style={styles.loginButton}>
+           <TouchableOpacity style={styles.loginButton}
+             onPress={() => {
+               this.props.navigation.navigate('Testing');
+
+             }}
+             >
              <Text style={styles.buttonText}>Login{this.props.type}</Text>
            </TouchableOpacity>
 

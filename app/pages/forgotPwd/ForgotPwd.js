@@ -25,11 +25,12 @@ export default class ForgotPwd extends React.Component {
       <View style = {styles.headercontainer}>
 
         <View style = {styles.header}>
-          <TouchableOpacity   onPress={() => {
+          <TouchableOpacity onPress={() => {
             this.props.navigation.navigate('Login');
           }}>
           <Image source={require('../../images/back.png')} style={styles.back}/>
         </TouchableOpacity>
+
           <Text style = {styles.headerText}> FORGOT PASSWORD </Text>
         </View>
         <StatusBar
@@ -38,7 +39,6 @@ export default class ForgotPwd extends React.Component {
         />
 
         <View style = {styles.bodycontainer}>
-
 
         <Image source={require('../../images/passwordBig.png')} style={styles.password}/>
         <Text style= {styles.pwdText} >Lorem ipsum dolor sit er elit lamet,

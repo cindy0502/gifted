@@ -131,9 +131,9 @@ export const styles=StyleSheet.create({
     borderRadius: 25,
     padding: 10,
     borderWidth: 1,
-    top: 25,
-    right: 8,
     borderColor: '#C71616',
+    top: 25,
+    right: 8
   },
 
   buttonContainer2: {

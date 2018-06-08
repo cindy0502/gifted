@@ -10,9 +10,9 @@ Alert,
 TouchableOpacity,
 Image,
  } from 'react-native';
+import Something2 from './CreateEvent00.js';
+import Headercomponent from '../../components/Headercomponent.js';
 
-//import RegisterForm from '../../components/RegisterForm.js';
-import Headercomponent from '../../components/Headercomponent.js'
 
 import {styles} from '../createEvent/styles';
 
@@ -33,7 +33,9 @@ export default class CreateEvent extends Component {
 
 
         <View style = {styles.header}>
+          <View style={{left:-80}}>
           <Headercomponent {...this.props}/>
+          </View>
           {/* <TouchableOpacity>
           <Image source={require('../../images/menu.png')} style={styles.menu}/>
         </TouchableOpacity> */}
@@ -123,11 +125,13 @@ export default class CreateEvent extends Component {
                 />
           </View>
 
-            <Text style= {styles.donationText} >Donation Images </Text>
+            <Text style= {styles.donationText} > Donation Images </Text>
+
 
             <Image source={require('../../images/add.png')} style={styles.redPlus}/>
 
       </View>
+      {/* <Something2 /> */}
     </View>
 
     );

@@ -12,7 +12,7 @@ export const styles=StyleSheet.create({
     backgroundColor: '#ffffff'
   },
   header: {
-    backgroundColor: '#49edea',
+    backgroundColor: '#7CC7C2',
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'row',
@@ -41,7 +41,7 @@ export const styles=StyleSheet.create({
   registerButton: {
     top: 80,
     width:150,
-    backgroundColor:'#ef2899',
+    backgroundColor:'#C71616',
     borderRadius: 25,
     marginVertical: 10,
     paddingVertical: 13
@@ -62,7 +62,7 @@ export const styles=StyleSheet.create({
       backgroundColor: '#fff',
       width: 300,
       borderWidth: 1.5,
-      borderColor: '#49edea',
+      borderColor: '#7CC7C2',
       height: 40,
       borderRadius: 15 ,
       margin: 10

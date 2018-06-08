@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native'
+import {StyleSheet} from 'react-native';
 
 export const styles=StyleSheet.create({
   headercontainer : {
@@ -33,13 +33,15 @@ export const styles=StyleSheet.create({
     width: 2,
 
   },
-  inputBox: {
-    backgroundColor:'#ffffff',
-    paddingHorizontal:16,
-    fontSize:16,
-    marginVertical: 10,
+  doneText: {
+    padding: 6,
+    left: 45,
+    top: 15,
+    margin: 4,
+    color: 'white',
 
   },
+
   registerButton: {
     top: 120,
     width:170,
@@ -57,45 +59,34 @@ export const styles=StyleSheet.create({
     fontWeight: 'bold'
 
   },
-  SectionStyle: {
+
+  inputBackground: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#7CC7C2',
+    height: 50
+  },
+  imageContainer: {
     flexDirection: 'row',
-      justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: '#fff',
-      width: 300,
-      borderWidth: 1.5,
-      borderColor: '#7CC7C2',
-      height: 35,
-      borderRadius: 15 ,
-      margin: 10
-},
-password : {
-  padding: 10,
-  bottom: 65,
-  height: 70,
-  width: 70,
-  resizeMode : 'stretch',
-  alignItems: 'center'
-},
 
-pwdText : {
-  padding: 35,
-  bottom: 50,
-  color: '#b3bcbc',
-},
-phone : {
-  padding: 10,
-  margin: 8,
-  height: 15,
-  width: 15,
-  resizeMode : 'stretch',
-  alignItems: 'center'
-},
+  },
+  bank: {
+    width: 80,
+    height: 80,
+    margin: 25,
+    borderRadius: 40,
+    borderColor: '#7CC7C2',
+    padding: 5,
+    borderWidth: 5,
+    bottom: 10,
+    right: 8
+  },
 
-resendtOtp: {
-  left: 90,
-  color: '#C71616',
-},
+  textName: {
+    bottom: 10,
+    left: 35,
+    color: '#7CC7C2',
+    fontSize: 18
+  }
 
-
-});
+},)

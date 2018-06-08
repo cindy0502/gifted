@@ -12,7 +12,7 @@ export const styles=StyleSheet.create({
   registerButton: {
     top: 80,
     width:180,
-    backgroundColor:'#ef2899',
+    backgroundColor:'#C71616',
     borderRadius: 25,
     marginVertical: 10,
     paddingVertical: 13
@@ -35,7 +35,7 @@ export const styles=StyleSheet.create({
   loginButton: {
     top: 80,
     width:180,
-    backgroundColor:'#49edea',
+    backgroundColor:'#7CC7C2',
     borderRadius: 25,
     marginVertical: 10,
     paddingVertical: 13
@@ -56,7 +56,7 @@ export const styles=StyleSheet.create({
       backgroundColor: '#fff',
       width: 300,
       borderWidth: 1.5,
-      borderColor: '#49edea',
+      borderColor: '#7CC7C2',
       height: 40,
       borderRadius: 15 ,
       margin: 10
@@ -80,7 +80,7 @@ password : {
 },
 forgotPwd: {
   left: 90,
-  color: '#ef2899',
+  color: '#C71616',
 },
 logo: {
   bottom: 90,

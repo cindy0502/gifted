@@ -33,9 +33,9 @@ export default class AccountInfo extends Component {
 
 
         <View style = {styles.header}>
-
+          <View>
           <Headercomponent {...this.props}/>
-
+          </View>
         {/* <TouchableOpacity>
           <Image source={require('../../images/menu.png')} style={styles.menu}/>
         </TouchableOpacity> */}

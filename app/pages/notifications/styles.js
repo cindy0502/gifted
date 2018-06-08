@@ -3,10 +3,13 @@ import {StyleSheet} from 'react-native'
 export const styles=StyleSheet.create({
   headercontainer : {
     flex: 1,
+    top:-420,
+    height:'100%',
+    backgroundColor:'white',
   },
 
   header: {
-    backgroundColor: '#49edea',
+    backgroundColor: '#7CC7C2',
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'row',

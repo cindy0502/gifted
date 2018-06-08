@@ -17,10 +17,10 @@ import Headercomponent from '../../components/Headercomponent.js';
 
 
 
-import {styles} from '../myEvent/styles';
+import {styles} from '../invitedEvent/styles';
 
 
-export default class MyEvent extends Component {
+export default class InvitedEvent extends Component {
 
   static navigationOptions = ({ navigation }) => {
     let drawerLabel = 'Home';
@@ -49,7 +49,7 @@ export default class MyEvent extends Component {
           {/* <TouchableOpacity>
             <Image source={require('../../images/menu.png')} style={styles.menu}/>
           </TouchableOpacity> */}
-            <Text style = {styles.headerText}> MY EVENT </Text>
+            <Text style = {styles.headerText}> INVITED EVENT </Text>
           </View>
           <StatusBar
             backgroundColor='#ffffff'
@@ -103,15 +103,15 @@ export default class MyEvent extends Component {
           </View>
           <View style= {styles.buttonContainer2}>
             <TouchableOpacity style={styles.pledge1Button}>
-              <Text style={styles.buttonText}>$$${this.props.type}</Text>
+              <Text style={styles.buttonText}>PLEDGE{this.props.type}</Text>
             </TouchableOpacity>
 
             <TouchableOpacity style={styles.pledge2Button}>
-              <Text style={styles.buttonText}>$$${this.props.type}</Text>
+              <Text style={styles.buttonText}>PLEDGE{this.props.type}</Text>
             </TouchableOpacity>
 
             <TouchableOpacity style={styles.pledge3Button}>
-              <Text style={styles.buttonText}>$$${this.props.type}</Text>
+              <Text style={styles.buttonText}>PLEDGE{this.props.type}</Text>
             </TouchableOpacity>
           </View>
 

@@ -11,7 +11,6 @@ TouchableOpacity,
 Image,
  } from 'react-native';
 
-//import RegisterForm from '../../components/RegisterForm.js';
 
 import {styles} from '../register/styles';
 

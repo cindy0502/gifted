@@ -16,9 +16,12 @@ export default class Headercomponent extends Component {
           onPress={()=> {
             const {navigate} = this.props.navigation;
             navigate('DrawerOpen');
-          }}><Image
+          }}>
+
+          <Image
           style = {{width: 20, height: 20}}
           Image source={require('../images/menu.png')} />
+
         </TouchableOpacity>
       </View>
     )
